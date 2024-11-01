@@ -1,0 +1,14 @@
+.telaalbums_albumcover a.overlay {
+	
+	-webkit-transition: 0.2s; /* Safari */
+	transition: 0.2s;
+}
+
+.telaalbums_albumcover a.overlay:hover {
+	
+	-webkit-transition: 0.2s; /* Safari */
+	transition: 0.2s;
+	-ms-transform: rotate(-7deg); /* IE 9 */
+	-webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+	transform: rotate(-7deg);
+}

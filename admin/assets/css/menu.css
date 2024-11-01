@@ -1,0 +1,131 @@
+.telatabs > ul {
+  text-align: center;
+  font-weight: 500;
+  margin: 50px 0 0;
+  padding: 0;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.telatabs > ul > li {
+  display: inline-block;
+  padding: 0.6em 0;
+  position: relative;
+  width: 33%;
+  margin: 0 0 0 -4px;
+}
+.telatabs > ul > li:before, .telatabs > ul > li:after {
+  opacity: 0;
+  transition: 0.3s ease;
+}
+.telatabs > ul > li.ui-tabs-active:before, .telatabs > ul > li.ui-tabs-active:after, .telatabs > ul > li.ui-state-hover:before, .telatabs > ul > li.ui-state-hover:after, .telatabs > ul > li.ui-state-focus:before, .telatabs > ul > li.ui-state-focus:after {
+  opacity: 1;
+}
+.telatabs > ul > li:before, .telatabs > ul > li.ui-state-active.ui-state-hover:before, .telatabs > ul > li.ui-state-active.ui-state-focus:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  
+  top: 50%;
+  bottom: 0px;
+  left: 5px;
+  right: 5px;
+  
+}
+.telatabs > ul > li:after, .telatabs > ul > li.ui-state-active.ui-state-hover:after, .telatabs > ul > li.ui-state-active.ui-state-focus:after {
+  content: "";
+  background: #f1f1f1;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 50%;
+  bottom: -6px;
+  margin-left: -6px;
+  transform: rotate(45deg);
+  box-shadow: inset 3px 3px 3px rgba(22, 195, 255, 0.5), inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.telatabs > ul > li.ui-state-hover:before, .telatabs > ul > li.ui-state-focus:before {
+  box-shadow: none;
+}
+.telatabs > ul > li.ui-state-hover:after, .telatabs > ul > li.ui-state-focus:after {
+  box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.2), inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.telatabs > ul > li.ui-state-focus a {
+  text-decoration: underline;
+}
+.telatabs > ul > li:focus {
+  outline: none !important;
+}
+.telatabs > ul > li a {
+  color: #444;
+  display:block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+.telatabs > ul > li a:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+.telatabs > ul > li a span {
+  position: relative;
+  top: -0.5em;
+}
+
+.telatabs.dark > ul {
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+.telatabs.dark > ul > li {
+  background: #333;
+}
+.telatabs.dark > ul > li:before, .telatabs.dark > ul > li.ui-state-active.ui-state-hover:before, .telatabs.dark > ul > li.ui-state-active.ui-state-focus:before {
+  box-shadow: 0 2px 3px rgba(255, 255, 255, 0.3);
+}
+.telatabs.dark > ul > li:after, .telatabs.dark > ul > li.ui-state-active.ui-state-hover:after, .telatabs.dark > ul > li.ui-state-active.ui-state-focus:after {
+  background: #333;
+  box-shadow: inset 3px 3px 3px rgba(255, 255, 255, 0.3), inset 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+.telatabs.dark > ul > li.ui-state-hover:before, .telatabs.dark > ul > li.ui-state-focus:before {
+  box-shadow: none;
+}
+.telatabs.dark > ul > li.ui-state-hover:after, .telatabs.dark > ul > li.ui-state-focus:after {
+  box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.4);
+}
+.telatabs.dark > ul > li a {
+  color: white;
+}
+
+.telatabs > img {
+  width: 60px;
+  float: left;
+  margin: 0 1em 1em 0;
+  border-radius: 3px;
+}
+
+.telatabs > h1 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.telatabs {
+  width: 90%;
+  min-width: 360px;
+  margin: auto;
+}
+
+.contents {
+visibility: hidden;
+  padding: 20px 50px;
+  min-height: 200px;
+}
+
+.darkpage {
+  background: #333;
+  color: white;
+}
+
+.darkpage,
+.lightpage {
+  padding: 50px 0;
+}

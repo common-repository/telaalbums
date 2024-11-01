@@ -1,0 +1,15 @@
+.telaalbums_img {
+	
+	-webkit-transition: 0.2s; /* Safari */
+	transition: 0.2s;
+	-webkit-filter: grayscale(0%);
+}
+
+.telaalbums_img:hover {
+	
+	-webkit-transition: 0.2s; /* Safari */
+	transition: 0.2s;
+	filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}

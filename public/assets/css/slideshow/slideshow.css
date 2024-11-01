@@ -1,0 +1,91 @@
+/* jssor slider bullet navigator skin 13 css */
+/*
+.jssorb13 div           (normal)
+.jssorb13 div:hover     (normal mouseover)
+.jssorb13 .av           (active)
+.jssorb13 .av:hover     (active mouseover)
+.jssorb13 .dn           (mousedown)
+*/
+.jssorb13 {
+	position: absolute;
+}
+
+.jssorb13 div, .jssorb13 div:hover, .jssorb13 .av {
+	position: absolute;
+	/* size of bullet elment */
+	width: 21px;
+	height: 21px;
+	background: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 21 21' width='21px' height='21px'><path d='M 6, 12m 0, 0a 6,6 0 1,0 12,0a 6,6 0 1,0 -12,0' stroke='white' stroke-width='1' fill='#373737'/></svg>") no-repeat;
+	overflow: hidden;
+	cursor: pointer;
+	z-index: auto;
+}
+.jssorb13 div {
+	background: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 21 21' width='21px' height='21px'><path d='M 6, 12m 0, 0a 6,6 0 1,0 12,0a 6,6 0 1,0 -12,0' stroke='white' stroke-width='1' fill='#373737'/></svg>") no-repeat;
+}
+
+.jssorb13 div:hover, .jssorb13 .av:hover {
+	background: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 21 21' width='21px' height='21px'><path d='M 6, 12m 0, 0a 6,6 0 1,0 12,0a 6,6 0 1,0 -12,0' stroke='white' stroke-width='1' fill='#8c8c8c'/></svg>") no-repeat;
+}
+
+.jssorb13 .av {
+	background: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 21 21' width='21px' height='21px'><path d='M 6, 12m 0, 0a 6,6 0 1,0 12,0a 6,6 0 1,0 -12,0' stroke='white' stroke-width='1' fill='#373737'/></svg>") no-repeat;
+}
+
+.jssorb13 .dn, .jssorb13 .dn:hover {
+
+}
+
+/* jssor slider arrow navigator skin 06 css */
+/*
+.jssora06l                  (normal)
+.jssora06r                  (normal)
+.jssora06l:hover            (normal mouseover)
+.jssora06r:hover            (normal mouseover)
+.jssora06l.jssora06ldn      (mousedown)
+.jssora06r.jssora06rdn      (mousedown)
+.jssora06l.jssora06lds      (disabled)
+.jssora06r.jssora06rds      (disabled)
+*/
+.jssora06l, .jssora06r {
+	display: block;
+	position: absolute;
+	/* size of arrow element */
+	width: 45px;
+	height: 45px;
+	cursor: pointer;
+	background: url('../../images/a06.png') no-repeat;
+	overflow: hidden;
+}
+
+.jssora06l {
+	background-position: -8px -38px;
+}
+
+.jssora06r {
+	background-position: -68px -38px;
+}
+
+.jssora06l:hover {
+	background-position: -128px -38px;
+}
+
+.jssora06r:hover {
+	background-position: -188px -38px;
+}
+
+.jssora06l.jssora06ldn {
+	background-position: -248px -38px;
+}
+
+.jssora06r.jssora06rdn {
+	background-position: -308px -38px;
+}
+
+.jssora06l.jssora06lds {
+	background-position: -8px -38px; opacity: .3; pointer-events: none;
+}
+
+.jssora06r.jssora06rds {
+	background-position: -68px -38px; opacity: .3; pointer-events: none;
+}
